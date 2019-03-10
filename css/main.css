@@ -1,47 +1,104 @@
-/**
-Sample css code
-*/
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body,
 html {
   height: 100%;
 }
 
+body
+{
+    font-family: Tahoma,Helvetica,Arial,Sans-Serif;
+    font-size: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+div
+{
+    position: relative;
+    border: none;
+}
+img, embed, object, video 
+{
+    max-width: 100%;
+}
 /*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+div.site_container 
+{
+    clear: both;
+    background-color: #ffffff;
+    background-image: url('../img/background_image.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+div.site_header 
+{
+    clear: both;
+    width: 980px;
+    height: 80px;
+}
+div.header_logo 
+{
+    width: 80px;
+    height: 62px;
+    /*margin-left: calc((100% - 980px) / 2);*/
+    margin-left: 450px;
+}
+div.header_title 
+{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 140%;
+}
+div.header_motto 
+{
+    text-align: center;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+div.header_menu 
+{
+    clear: both;
+    float: left;
+    width: 940px;
+    height: 61px;
+    z-index: 20; /*fix for ie */
+    margin: 70px 0px 0px 0px;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+/* ---------------- top	main menu	-------------------------*/
+ul.mainmenu 
+{
+    clear: both;
+    float: right;
+    z-index: 20; /*fix for ie */
+    margin: 0px 1px 0px 0px;
+    padding: 0;
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
-}
+    ul.mainmenu li 
+    {
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        /* background: url("../pix/li_sep.png") right 22px no-repeat; */
+    }
 
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
-}
+        ul.mainmenu li a 
+        {
+            display: block;
+            margin: 0 0 0 0;
+            padding: 0px 10px 0px 10px;
+            width: 120px;
+            line-height: 60px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            text-decoration: none;
+        }
 
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
-}
+            ul.mainmenu li a:hover 
+            {
+                color: #FBFBFB;
+            }
+/* ---------------- end top	main menu	---------------------*/
