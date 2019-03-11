@@ -1,39 +1,79 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
+    <!-- Standard html page stuff
+    --------------------------------------------------------------------- -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="author" content="ISM6225 Group 10" />
     <meta name="copyright" content="ISM6225 Group 10" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script type="text/javascript" src="js/main.js"></script>
     <title>Hotel Booking System</title>
+
+    <!-- Mobile Specific Metas
+    --------------------------------------------------------------------- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font
+    --------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="css/site_fonts.css" />
+
+    <!-- CSS
+    --------------------------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <!-- javascript
+    --------------------------------------------------------------------- -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Favicon
+    --------------------------------------------------------------------- -->
+    <link rel="icon" type="img/png" href="img/favicon.png" />
 </head>
-<body>
-    <div id="site_container" class="site_container">
-        <div id="site_header" class="site_header">
-            <div id="header_logo" class="header_logo">
-                <a href="index.html"><img src="./img/luggage.png" /></a>
-            </div>
-            <div id="header_title" class="header_title">
-                HBS
-            </div>
-            <div id="header_motto" class="header_motto">
-                Hotel Booking System
-            </div>
-            <div id="header_menu">
-                <ul class="mainmenu">
-                    <li><a href="./about.html">ABOUT PROJECT</a></li>
-                    <li><a href="./hotel_info.html">HOTEL INFO</a></li>
-                    <li><a href="./attractions.html">ATTRACTIONS</a></li>
-                    <li><a href="./sign_in.html">SIGN IN</a></li>
+
+<body id="MainPage" onload="PageReloaded()">
+    <!-- Primary Page layout 
+    --------------------------------------------------------------------- -->
+    <div class="container">
+        <!-- main menu bar at the top
+    --------------------------------------------------------------------- -->
+        <div class="top_menu">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Option 1</a></li>
+                    <li class="nav-item"><a href="#">Option 2</a></li>
+                    <li class="nav-item"><a href="#">Option 3</a></li>
+                    <li class="nav-item"><a href="#">About Project</a></li>
                 </ul>
-            </div>
-
-
+            </nav>
         </div>
 
+        <div class="row">
+            <div class="header_logo">
+                <a href="index.html"><img src="./img/luggage.png" /></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="header_motto">
+                <h3>HBS</h3>
+            </div>
+            <div class="header_motto">
+                <h4>Hotel Booking System</h4>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="four columns">
+                Search for a hotel
+            </div>
+            <div class="eight columns">
+                <h4>Enter Booking Information</h4>
+                <h5>Where to?</h5>
+            </div>
+        </div>
 
     </div>
+
+
 </body>
 </html>
 
