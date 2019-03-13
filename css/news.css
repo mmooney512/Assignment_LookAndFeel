@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------------------ */
+/* Add menu stylying*/
+/* ------------------------------------------------------------------------ */
+
+div.news_stories{
+    margin-left: 0.1rem;
+}
+div.story {
+    margin-top: 2rem;
+    padding: 1.4rem 0 0 1rem;
+    border-bottom: 1px solid #afafaf;
+    background-color: #9a9a9a;
+}
+
+div.story img{
+    max-width: 98%;
+}
