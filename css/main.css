@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     top menu css
     https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
@@ -553,6 +554,7 @@ form {
 }
 
 
+/* ------------------------------------------------------------------------ */
 /* Utilities
 /* ------------------------------------------------------------------------ */
 .u-full-width {
@@ -583,6 +585,10 @@ hr {
     border-top: 2px solid #E1E1E1;
 }
 
+
+/* ------------------------------------------------------------------------ */
+/* Custom
+/* ------------------------------------------------------------------------ */
 div.header {
     padding: 0.4rem;
     background: #34495E;
@@ -591,6 +597,7 @@ div.header {
 div.header_row {
     background-color: #34495E;
 }
+
 
 div.header_logo a img {
     display: block;
@@ -603,17 +610,18 @@ div.header_logo a img {
 div.header_motto {
     padding: 1.4rem 0 0 1.4rem;
     color: #fbfbfb;
+    text-align:center;
 }
 
 /* ------------------------------------------------------------------------ */
-/* story divs*/
+/* MAIN  divs*/
 /* ------------------------------------------------------------------------ */
 div.main_story_photo {
     background: #cdcdcd;
 
 }
 div.main_story_photo img {
-    max-width: 95%;
+    max-width: 96%;
 }
 
 div.sub_story
@@ -622,13 +630,14 @@ div.sub_story
 }
 
 div.sub_story img {
-    max-width: 90%;
+    max-width: 94%;
 }
+
+
 
 /* ------------------------------------------------------------------------ */
 /* Add menu stylying*/
 /* ------------------------------------------------------------------------ */
-
 
 .topnav {
     background-color: #34495E;
@@ -643,7 +652,7 @@ div.sub_story img {
     text-align: center;
     padding: 2rem 0.8rem;
     text-decoration: none;
-    font-size: 2.4rem;
+   /*/ font-size: 1.0rem; */
 }
 
 /* Add an active class to highlight the current page */
@@ -716,7 +725,7 @@ div.sub_story img {
 /* When the screen is less than 600 pixels wide, hide all links, except for the 
     first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
