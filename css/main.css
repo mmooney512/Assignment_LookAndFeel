@@ -22,8 +22,8 @@
     position: relative;
     width: 100%;
     max-width: 960px;
-    background-color: #fff;
-    background-image: url('../img/background_image.jpg');
+    background-color: #f3f3f3;
+    /*background-image: url('../img/background_image.jpg');*/
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -242,7 +242,7 @@ body {
     display: block;
     padding: 15px; 20px;
     color: #FFF;
-    background:#34495E;
+    background: #34495E;
 }
 
 .nav-item:first-child a{
@@ -643,7 +643,7 @@ form {
     float: left;
 }
 
-
+/* ------------------------------------------------------------------------ */
 /* Misc
 /* ------------------------------------------------------------------------ */
 hr {
@@ -653,6 +653,10 @@ hr {
     border-top: 2px solid #E1E1E1;
 }
 
+div.header {
+    padding: 0.4rem;
+    background: #34495E;
+}
 
 div.header_logo a img
 {
@@ -660,13 +664,35 @@ div.header_logo a img
     width: 80px;
     height: 62px;
     margin: auto;
+    padding: 0 0 0 0.2rem;
 }
 
-div.header_motto
+div.header_motto {
+    padding: 1.4rem 0 0 1.4rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* story divs*/
+/* ------------------------------------------------------------------------ */
+div.main_story_photo {
+    background: #cdcdcd;
+
+}
+div.main_story_photo img {
+    max-width: 95%;
+}
+
+div.sub_story
 {
-    text-align: center;
+    background: #bcbcbc;
 }
 
+div.sub_story img {
+    max-width: 90%;
+}
+
+
+/* ------------------------------------------------------------------------ */
 /* Clearing
 /* ------------------------------------------------------------------------ */
 
