@@ -633,6 +633,10 @@ div.sub_story img {
     max-width: 94%;
 }
 
+div.footer{
+    margin: 4rem 0;
+    background-color: #ccbbcc;
+}
 
 
 /* ------------------------------------------------------------------------ */
