@@ -1,8 +1,9 @@
 const DOMPARSER = new DOMParser().parseFromString.bind(new DOMParser())
 const proxy_url = 'https://cors-anywhere.herokuapp.com/';
-const git_json = 'nyc.xml';
+const feedUrl = 'nyc.xml';
 /* Fetch URLs from JSON */
 //fetch('urls.json').then((res) => {
+/*
 fetch(git_json, { mode: 'no-cors' }).then((res) => {
     res.text().then((data) => {
         var frag = document.createDocumentFragment()
@@ -18,13 +19,15 @@ fetch(git_json, { mode: 'no-cors' }).then((res) => {
             fetch(url).then((res) => {
                 res.text().then((htmlTxt) => {
                     /* Extract the RSS Feed URL from the website */
-                    try {
+/*                    try {
                         let doc = DOMPARSER(htmlTxt, 'text/html')
                         var feedUrl = doc.querySelector('link[type="application/rss+xml"]').href
                     } catch (e) {
                         console.error('Error in parsing the website');
                         return
                     }
+*/
+
                     /* Fetch the RSS Feed */
                     fetch(feedUrl).then((res) => {
                         res.text().then((xmlTxt) => {
