@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
     top menu css
     https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
@@ -799,6 +799,7 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
