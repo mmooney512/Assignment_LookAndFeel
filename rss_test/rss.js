@@ -57,8 +57,9 @@ fetch(git_json, { mode: 'no-cors' }).then((res) => {
                             document.querySelector('output').appendChild(frag)
                         })
                     }).catch(() => console.error('Error in fetching the RSS feed'))
-                })
+/*                })
             }).catch(() => console.error('Error in fetching the website'))
         })
     })
 }).catch(() => console.error('Error in fetching the URLs json'))
+*/
