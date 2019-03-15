@@ -1,12 +1,4 @@
 ﻿@charset "UTF-8";
-/*
-    top menu css
-    https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
-
-    page css
-    http://getskeleton.com/
-*/
-
 
 /* Table of contents
 /* ------------------------------------------------------------------------ 
@@ -31,6 +23,7 @@
 .container {
     position: relative;
     width: 100%;
+    min-width: 310px;
     max-width: 960px;
     background-color: #f3f3f3;
     /*background-image: url('../img/background_image.jpg');*/
@@ -49,16 +42,24 @@
     box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+/* For devices larger than 300px */
+@media (min-width: 10px) {
     .container {
+        min-width: 310px;
         width: 85%;
         padding: 0;
+    }
+    .one-third.column {
+        width: 30.6666666667%;
+    }
+
+    .two-thirds.column {
+        width: 65.3333333333%;
     }
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 675px) {
     .container {
         width: 80%;
     }
@@ -598,7 +599,6 @@ div.header_row {
     background-color: #34495E;
 }
 
-
 div.header_logo a img {
     display: block;
     width: 80px;
@@ -608,7 +608,7 @@ div.header_logo a img {
 }
 
 div.header_motto {
-    padding: 1.4rem 0 0 1.4rem;
+    padding: 1.2rem 0 0 0;
     color: #fbfbfb;
     text-align:center;
 }
@@ -726,6 +726,7 @@ div.footer{
     display: block;
 }
 
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the 
     first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
 */
@@ -744,7 +745,7 @@ div.footer{
     user clicks on the icon. This class makes the topnav look good on small 
     screens (display the links vertically instead of horizontally) 
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
     .topnav.responsive {
         position: relative;
     }

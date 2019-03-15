@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
     <!-- Standard html page stuff
@@ -20,18 +20,19 @@
     --------------------------------------------------------------------- -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/news.css" />
+    <link rel="stylesheet" type="text/css" href="css/travel_chart.css" />
 
     <!-- javascript
     --------------------------------------------------------------------- -->
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/chart_min.js"></script>
+    <script type="text/javascript" src="js/make_charts.js"></script>
     <!-- Favicon
     --------------------------------------------------------------------- -->
     <link rel="icon" type="img/png" href="img/favicon.ico" />
 </head>
 
-<body id="MainPage">
+<body id="MainPage" onload="PageReloaded()">
     <!-- Primary Page layout
     --------------------------------------------------------------------- -->
     <!-- main menu bar at the top
@@ -68,7 +69,23 @@
         <div class="container">
             <!-- chart one
             ------------------------------------------------------------- -->
-            <p>add the charting stuff here</p>
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="travel_chart">
+                        <canvas id="chart_one" width="920" height="450"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chart two
+            ------------------------------------------------------------- -->
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="travel_chart">
+                        <canvas id="chart_two" width="920" height="450"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
