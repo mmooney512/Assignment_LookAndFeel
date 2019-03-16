@@ -594,11 +594,11 @@ hr {
 /* ------------------------------------------------------------------------ */
 div.header {
     padding: 0.4rem;
-    background: #34495E;
+    background: #53687e;
 }
 
 div.header_row {
-    background-color: #34495E;
+    background-color: #53687E;
 }
 
 div.header_logo a img {
@@ -619,7 +619,7 @@ div.header_motto {
 /* MAIN  divs*/
 /* ------------------------------------------------------------------------ */
 div.main_story_photo {
-    background: #bdf7f8;
+    background: #FBFBFB;
 }
 div.main_story_photo img {
     max-width: 96%;
@@ -627,16 +627,17 @@ div.main_story_photo img {
 
 div.sub_story
 {
-    background: #c8c8c8;
+    background: #FBFBFB;
 }
 
 div.sub_story img {
     max-width: 94%;
 }
 
-div.footer{
+div.footer {
     margin: 4rem 0;
-    background-color: #7e7e7e;
+    color: #FBFBFB;
+    background-color: #2b323e;
 }
 
 
@@ -645,7 +646,7 @@ div.footer{
 /* ------------------------------------------------------------------------ */
 
 .topnav {
-    background-color: #34495E;
+    background-color: #53687E;
     overflow: hidden;
 }
 
