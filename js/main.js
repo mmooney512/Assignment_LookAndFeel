@@ -102,3 +102,20 @@ function myFunction()
         x.className = "topnav";
     }
 }
+
+function myFunction_about() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    var y = document.getElementById("hdr_menu");
+    if (y.className === "hdr one columns") {
+        y.className ="hdr nine columns"
+    }
+    else {
+        y.className = "hdr one columns"
+    }
+    
+}

@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /* Table of contents
 /* ------------------------------------------------------------------------ 
@@ -33,7 +33,6 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-    word-wrap: break-word;
 }
 
 .column,
@@ -44,12 +43,15 @@
 }
 
 /* For devices larger than 300px */
-@media (min-width: 10px) {
+/*@media (min-width: 10px and min-w)*/
+
+@media screen (min-width: 10px) {
     .container {
-        min-width: 310px;
+        min-width: 360px;
         width: 85%;
         padding: 0;
     }
+
     .one-third.column {
         width: 30.6666666667%;
     }
@@ -57,157 +59,175 @@
     .two-thirds.column {
         width: 65.3333333333%;
     }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 675px) {
-    .container {
-        width: 80%;
-    }
-
-    .column,
-    .columns {
-        margin-left: 4%;
-    }
-
-        .column:first-child,
-        .columns:first-child {
-            margin-left: 0;
-        }
-
-    .one.column,
-    .one.columns {
+    .hdr.one.columns {
         width: 4.66666666667%;
+        min-width: 24px;
+        
     }
-
-    .two.columns {
+    .left_menu{
+        background-color:green;
+    }
+    .hdr.two.columns {
         width: 13.3333333333%;
+        min-width: 60px;
     }
-
-    .three.columns {
-        width: 22%;
-    }
-
-    .four.columns {
-        width: 30.6666666667%;
-    }
-
-    .five.columns {
-        width: 39.3333333333%;
-    }
-
-    .six.columns {
-        width: 48%;
-    }
-
-    .seven.columns {
-        width: 56.6666666667%;
-    }
-
-    .eight.columns {
-        width: 65.3333333333%;
-    }
-
-    .nine.columns {
+    .hdr.nine.columns {
         width: 74.0%;
     }
 
-    .ten.columns {
-        width: 82.6666666667%;
-    }
+/* For devices larger than 550px */
+    @media (min-width: 675px) {
+        .container {
+            width: 80%;
+        }
 
-    .eleven.columns {
-        width: 91.3333333333%;
-    }
+        .column,
+        .columns {
+            margin-left: 4%;
+        }
 
-    .twelve.columns {
-        width: 100%;
-        margin-left: 0;
-    }
+            .column:first-child,
+            .columns:first-child {
+                margin-left: 0;
+            }
 
-    .one-third.column {
-        width: 30.6666666667%;
-    }
+        .one.column,
+        .one.columns {
+            width: 4.66666666667%;
+        }
 
-    .two-thirds.column {
-        width: 65.3333333333%;
-    }
+        .left_menu {
+            background-color: yellow;
+        }
 
-    .one-half.column {
-        width: 48%;
-    }
+        .two.columns {
+            width: 13.3333333333%;
+        }
 
-    /* Offsets */
-    .offset-by-one.column,
-    .offset-by-one.columns {
-        margin-left: 8.66666666667%;
-    }
+        .three.columns {
+            width: 22%;
+        }
 
-    .offset-by-two.column,
-    .offset-by-two.columns {
-        margin-left: 17.3333333333%;
-    }
+        .four.columns {
+            width: 30.6666666667%;
+        }
 
-    .offset-by-three.column,
-    .offset-by-three.columns {
-        margin-left: 26%;
-    }
+        .five.columns {
+            width: 39.3333333333%;
+        }
 
-    .offset-by-four.column,
-    .offset-by-four.columns {
-        margin-left: 34.6666666667%;
-    }
+        .six.columns {
+            width: 48%;
+        }
 
-    .offset-by-five.column,
-    .offset-by-five.columns {
-        margin-left: 43.3333333333%;
-    }
+        .seven.columns {
+            width: 56.6666666667%;
+        }
 
-    .offset-by-six.column,
-    .offset-by-six.columns {
-        margin-left: 52%;
-    }
+        .eight.columns {
+            width: 65.3333333333%;
+        }
 
-    .offset-by-seven.column,
-    .offset-by-seven.columns {
-        margin-left: 60.6666666667%;
-    }
+        .nine.columns {
+            width: 74.0%;
+        }
 
-    .offset-by-eight.column,
-    .offset-by-eight.columns {
-        margin-left: 69.3333333333%;
-    }
+        .ten.columns {
+            width: 82.6666666667%;
+        }
 
-    .offset-by-nine.column,
-    .offset-by-nine.columns {
-        margin-left: 78.0%;
-    }
+        .eleven.columns {
+            width: 91.3333333333%;
+        }
 
-    .offset-by-ten.column,
-    .offset-by-ten.columns {
-        margin-left: 86.6666666667%;
-    }
+        .twelve.columns {
+            width: 100%;
+            margin-left: 0;
+        }
 
-    .offset-by-eleven.column,
-    .offset-by-eleven.columns {
-        margin-left: 95.3333333333%;
-    }
+        .one-third.column {
+            width: 30.6666666667%;
+        }
 
-    .offset-by-one-third.column,
-    .offset-by-one-third.columns {
-        margin-left: 34.6666666667%;
-    }
+        .two-thirds.column {
+            width: 65.3333333333%;
+        }
 
-    .offset-by-two-thirds.column,
-    .offset-by-two-thirds.columns {
-        margin-left: 69.3333333333%;
-    }
+        .one-half.column {
+            width: 48%;
+        }
 
-    .offset-by-one-half.column,
-    .offset-by-one-half.columns {
-        margin-left: 52%;
+        /* Offsets */
+        .offset-by-one.column,
+        .offset-by-one.columns {
+            margin-left: 8.66666666667%;
+        }
+
+        .offset-by-two.column,
+        .offset-by-two.columns {
+            margin-left: 17.3333333333%;
+        }
+
+        .offset-by-three.column,
+        .offset-by-three.columns {
+            margin-left: 26%;
+        }
+
+        .offset-by-four.column,
+        .offset-by-four.columns {
+            margin-left: 34.6666666667%;
+        }
+
+        .offset-by-five.column,
+        .offset-by-five.columns {
+            margin-left: 43.3333333333%;
+        }
+
+        .offset-by-six.column,
+        .offset-by-six.columns {
+            margin-left: 52%;
+        }
+
+        .offset-by-seven.column,
+        .offset-by-seven.columns {
+            margin-left: 60.6666666667%;
+        }
+
+        .offset-by-eight.column,
+        .offset-by-eight.columns {
+            margin-left: 69.3333333333%;
+        }
+
+        .offset-by-nine.column,
+        .offset-by-nine.columns {
+            margin-left: 78.0%;
+        }
+
+        .offset-by-ten.column,
+        .offset-by-ten.columns {
+            margin-left: 86.6666666667%;
+        }
+
+        .offset-by-eleven.column,
+        .offset-by-eleven.columns {
+            margin-left: 95.3333333333%;
+        }
+
+        .offset-by-one-third.column,
+        .offset-by-one-third.columns {
+            margin-left: 34.6666666667%;
+        }
+
+        .offset-by-two-thirds.column,
+        .offset-by-two-thirds.columns {
+            margin-left: 69.3333333333%;
+        }
+
+        .offset-by-one-half.column,
+        .offset-by-one-half.columns {
+            margin-left: 52%;
+        }
     }
-}
 
 /* ------------------------------------------------------------------------ */
 /* Base Styles
@@ -216,9 +236,8 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-    height:100%;
+    height: 100%;
     font-size: 62.5%;
-
 }
 
 body {
@@ -609,9 +628,12 @@ div.header_logo a img {
 }
 
 div.header_motto {
-    padding: 1.2rem 0 0 0;
+    padding: 0.4rem 0 0 0;
     color: #fbfbfb;
-    text-align:center;
+    font-size: 2.4rem;
+    line-height: 1.35;
+    letter-spacing: -.08rem;
+    text-align: center;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -619,22 +641,21 @@ div.header_motto {
 /* ------------------------------------------------------------------------ */
 div.main_story_photo {
     background: #cdcdcd;
-
-}
-div.main_story_photo img {
-    max-width: 96%;
 }
 
-div.sub_story
-{
+    div.main_story_photo img {
+        max-width: 96%;
+    }
+
+div.sub_story {
     background: #bcbcbc;
 }
 
-div.sub_story img {
-    max-width: 94%;
-}
+    div.sub_story img {
+        max-width: 94%;
+    }
 
-div.footer{
+div.footer {
     margin: 4rem 0;
     background-color: #ccbbcc;
 }
@@ -649,16 +670,16 @@ div.footer{
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #fbfbfb;
-    text-align: center;
-    padding: 2rem 0.8rem;
-    text-decoration: none;
-   /* font-size: 1.0rem; */
-}
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #fbfbfb;
+        text-align: center;
+        padding: 0.1rem 0.8rem;
+        text-decoration: none;
+        /* font-size: 1.0rem; */
+    }
 
 /* Add an active class to highlight the current page */
 .active {
@@ -677,21 +698,20 @@ div.footer{
     overflow: hidden;
 }
 
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-    /*font-size: 17px;*/
-    border: none;
-    outline: none;
-    color: white;
-    padding: 2.0rem 0.8rem;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
+    /* Style the dropdown button to fit inside the topnav */
+    .dropdown .dropbtn {
+        /*font-size: 17px;*/
+        border: none;
+        outline: none;
+        color: white;
+        padding: 2.0rem 0.8rem;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
 
 /* Style the dropdown content (hidden by default) */
-.dropdown-content 
-{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -700,7 +720,7 @@ div.footer{
     z-index: 1;
 }
 
-/* Style the links inside the dropdown */
+    /* Style the links inside the dropdown */
     .dropdown-content a {
         float: none;
         color: black;
@@ -731,16 +751,22 @@ div.footer{
 /* When the screen is less than 600 pixels wide, hide all links, except for the 
     first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
 */
+/*
 @media screen and (max-width: 675px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
+*/
+@media screen and (max-width: 675px) {
+        .topnav a, .dropdown .dropbtn {
+            display: none;
+        }
 
-    .topnav a.icon {
-        float: right;
-        display: block;
+        .topnav a.icon {
+            float: left;
+            display: block;
+        }
     }
-}
 
 /* The "responsive" class is added to the topnav with JavaScript when the 
     user clicks on the icon. This class makes the topnav look good on small 
@@ -805,7 +831,6 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
 }
 
 /* Larger than phablet (also point when grid becomes active) */
