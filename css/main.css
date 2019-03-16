@@ -618,8 +618,7 @@ div.header_motto {
 /* MAIN  divs*/
 /* ------------------------------------------------------------------------ */
 div.main_story_photo {
-    background: #cdcdcd;
-
+    background: #bdf7f8;
 }
 div.main_story_photo img {
     max-width: 96%;
@@ -627,7 +626,7 @@ div.main_story_photo img {
 
 div.sub_story
 {
-    background: #bcbcbc;
+    background: #c8c8c8;
 }
 
 div.sub_story img {
@@ -636,7 +635,7 @@ div.sub_story img {
 
 div.footer{
     margin: 4rem 0;
-    background-color: #ccbbcc;
+    background-color: #7e7e7e;
 }
 
 
