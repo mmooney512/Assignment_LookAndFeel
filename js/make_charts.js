@@ -86,7 +86,28 @@ function PageReloaded()
                 }
             });
 
-
+        new Chart(document.getElementById("chart_three"),
+            {
+                type: 'doughnut',
+                data: {
+                    labels: ["No Summer Plans", "Summer Plans"],
+                    datasets: [
+                        {
+                            label: "Percent (Americans)",
+                            backgroundColor: ["#3e95cd", "#3cba9f"],
+                            data: [41, 59]
+                        }
+                    ]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Americans who plan to go on summer vacation:'
+                    }
+                 
+                }
+            });
     }
     catch (e)
     {
