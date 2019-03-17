@@ -15,6 +15,9 @@
     <!-- Font
     --------------------------------------------------------------------- -->
     <link rel="stylesheet" href="css/site_fonts.css" />
+    <link rel="stylesheet" href="css/site_fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" />
 
     <!-- CSS
     --------------------------------------------------------------------- -->
@@ -40,20 +43,25 @@
     <div class="header">
         <div class="container">
             <div class="row header_row">
-                <div class="two columns header_logo">
-                    <a href="index.html"><img src="./img/luggage.png" /></a>
+                <div class="one-third column">
+                    <a href="index.html"><img src="./img/trl_logo2_t.png" /></a>
                 </div>
-                <div class="ten columns header_motto">
-                    <h4>HBS Travel Blog</h4>
-                </div>
-            </div>
-            <div class="row header_row">
-                <div class="nine columns">
-                    <div class="u-pull-left">
+                <div class="two-thirds column">
+                    <div class="u-pull-right">
                         <div class="topnav" id="myTopnav">
-                            <a href="index.html">Home</a>
+                            <a href="index.html" class="active">Home</a>
                             <a href="news.html">News</a>
-                            <a href="travel_facts.html" class="active">Travel Facts</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    Articles <img src="./img/down_t.png" />
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="news.html">Best of...</a>
+                                    <a href="news.html">Eating &amp; Drinking</a>
+                                    <a href="news.html">Travel Guide</a>
+                                </div>
+                            </div>
+                            <a href="travel_facts.html">Travel Facts</a>
                             <a href="about.html">About Project</a>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                         </div>
