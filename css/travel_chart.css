@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /* ------------------------------------------------------------------------ */
 /* Add chart stylying*/
 /* ------------------------------------------------------------------------ */
@@ -7,7 +7,7 @@ div.travel_facts{
 
 }
 
-div.travel_chart{
+div.travel_chart {
     margin-top: 2rem;
-    background-color: #f1f3c0;
+    background-color: #d3d3d3;
 }
