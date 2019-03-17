@@ -10,7 +10,7 @@ div.story {
     margin-top: 2rem;
     padding: 1.4rem 0 0 1rem;
     border-bottom: 1px solid #afafaf;
-    background-color: #9a9a9a;
+    background-color: #FBFBFB;
 }
 
 div.story img{
@@ -23,17 +23,17 @@ div.story img{
 /* ------------------------------------------------------------------------ */
 
 div.story_image{
-    background-color: #bbaa99;
+    background-color: #fbfbfb;
 }
 div.story_image img {
     max-width: 98%;
 }
 div.story_title {
     margin-top: 2rem;
-    background-color: #72dcf3;
+    background-color: #fbfbfb;
 }
 
 div.story_feature_article {
     margin-top: 2rem;
-    background-color: #efe18b;
+    background-color: #fbfbfb;
 }
