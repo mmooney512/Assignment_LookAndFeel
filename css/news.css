@@ -27,6 +27,7 @@ div.story_image{
 }
 div.story_image img {
     max-width: 98%;
+    max-height: 300px;
 }
 div.story_title {
     margin-top: 2rem;
