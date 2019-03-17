@@ -59,11 +59,11 @@ function PageReloaded()
             {
                 type: 'horizontalBar',
                 data: {
-                    labels: ["71%", "33%", "19%", "18%", "13%", "7%", "2%", "5%"],
+                    labels: ["Cash, Check, or Savings", "Credit Card (to pay in full)", "Reward Points", "Credit Card (to pay monthly)", "A Tax Refund", "Timeshare/Vacation Plan", "Other", "Not Sure"],
                     datasets: [
                         {
-                            label: "Amount (USD)",
-                            backgroundColor: ["#525252", "#525252", "#525252", "#525252", "#525252", "#525252", "#525252", "#525252" ],
+                            label: "Percentage (%)",
+                            backgroundColor: ["#FF9933", "#FF9933", "#FF9933", "#FF9933", "#FF9933", "#FF9933", "#FF9933", "#FF9933" ],
                             data: [71,33,19,18,13,7,2,5]
                         }
                     ]
@@ -94,7 +94,7 @@ function PageReloaded()
                     datasets: [
                         {
                             label: "Percent (Americans)",
-                            backgroundColor: ["#3e95cd", "#3cba9f"],
+                            backgroundColor: ["#FFFF99", "#8e5ea2"],
                             data: [41, 59]
                         }
                     ]
