@@ -22,8 +22,9 @@ div.story img{
 /* Add features story stylying
 /* ------------------------------------------------------------------------ */
 
-div.story_image{
+div.story_image {
     background-color: #fbfbfb;
+    margin-top: 2rem;
 }
 div.story_image img {
     max-width: 98%;
