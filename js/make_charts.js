@@ -100,7 +100,7 @@ function PageReloaded()
                     ]
                 },
                 options: {
-                    legend: { display: false },
+                    legend: { display: true },
                     title: {
                         display: true,
                         text: 'Americans who plan to go on summer vacation:'
